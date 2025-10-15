@@ -9,4 +9,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('demo-angular');
+
+  public updateTitle(newTitle: string) {
+    this.title.set(newTitle);
+  }
 }
