@@ -7,6 +7,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "build:prod": "ng build --configuration production",
+    "start:prod": "npm run build:prod && npx http-server ./dist/demo-angular/browser -p 8080",
     "test": "ng test",
     "test:coverage": "ng test --code-coverage",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
